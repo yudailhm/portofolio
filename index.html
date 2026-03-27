@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Wahyuda Ilham — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="dark" data-theme="dark">
+
+  <!-- ============ NAVBAR ============ -->
+  <header>
+    <nav>
+      <a href="#hero" class="nav-logo">MWI<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#interactive">Interactive</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#comments">Komentar</a></li>
+        <li><a href="#oscilloscope">Osiloskop</a></li>
+        <li><a href="#weather">Cuaca</a></li>
+      </ul>
+      <div class="nav-right">
+        <button id="theme-toggle" aria-label="Toggle dark/light mode">
+          <i class="fas fa-sun" id="theme-icon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section id="hero">
+      <div class="hero-content">
+        <p class="hero-label">— Electrical Engineering Student</p>
+        <h1 class="hero-name">Muhammad<br /><em>Wahyuda Ilham</em></h1>
+        <p class="hero-desc">
+          Mahasiswa Teknik Elektro Universitas Hasanuddin.<br />
+          Passionate di bidang <span class="highlight">IoT</span> &amp; <span class="highlight">Embedded Systems</span>.
+        </p>
+        <div class="hero-cta">
+          <a href="#about" class="btn-primary">Lihat Profil</a>
+          <a href="#contact" class="btn-outline">Hubungi Saya</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="circuit-ring ring-1"></div>
+        <div class="circuit-ring ring-2"></div>
+        <div class="circuit-ring ring-3"></div>
+        <div class="hero-ring-center">
+          <i class="fas fa-microchip"></i>
+        </div>
+      </div>
+      <div class="scroll-hint">
+        <span>scroll</span>
+        <i class="fas fa-arrow-down"></i>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about">
+      <div class="section-label">01 — About</div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2>Sedikit<br /><em>tentang saya.</em></h2>
+          <p>
+            Saya <strong>Muhammad Wahyuda Ilham</strong>, mahasiswa Teknik Elektro semester 8 di
+            Universitas Hasanuddin, Makassar. Bidang yang menjadi fokus utama saya adalah
+            <strong>Internet of Things (IoT)</strong> dan sistem elektronika terbenam berbasis mikrokontroler.
+          </p>
+          <p>
+            Saat ini saya sedang menjalani program magang di <strong>Pelindo Petikemas</strong>,
+            di mana saya mengembangkan sistem monitoring volume tandon air berbasis sensor ultrasonik
+            HC-SR04 menggunakan Wemos D1 Mini, protokol MQTT, dan platform cloud Ubidots.
+          </p>
+          <div class="about-meta">
+            <div class="meta-item">
+              <span class="meta-number" data-target="8">0</span>
+              <span class="meta-label">Semester</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-number" data-target="1">0</span>
+              <span class="meta-label">Proyek IoT</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-number" data-target="2022">0</span>
+              <span class="meta-label">Angkatan</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image reveal">
+          <div class="image-frame">
+            <img src="foto-profil.jpg" alt="Muhammad Wahyuda Ilham" class="about-photo" />
+            <div class="image-tag">Pelindo Petikemas — Magang 2025</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills">
+      <div class="section-label">02 — Skills</div>
+      <div class="skills-header reveal">
+        <h2>Keahlian &amp;<br /><em>Teknologi.</em></h2>
+        <p>Tools dan teknologi yang saya gunakan dalam pengembangan proyek.</p>
+      </div>
+      <div class="skills-grid">
+
+        <article class="skill-card reveal">
+          <div class="skill-icon"><i class="fas fa-microchip"></i></div>
+          <h3>IoT & Embedded Systems</h3>
+          <p>Pengembangan sistem berbasis mikrokontroler untuk monitoring dan kontrol perangkat secara real-time.</p>
+          <ul class="skill-tags">
+            <li>ESP32</li>
+            <li>Wemos D1 Mini</li>
+            <li>MQTT</li>
+            <li>Ubidots</li>
+            <li>Arduino IDE</li>
+          </ul>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="80">
+              <div class="skill-bar-fill"></div>
+            </div>
+            <span class="skill-percent">80%</span>
+          </div>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-icon"><i class="fas fa-bolt"></i></div>
+          <h3>Elektronika & Hardware</h3>
+          <p>Perancangan dan analisis rangkaian elektronika, sensor, dan sistem kelistrikan industri.</p>
+          <ul class="skill-tags">
+            <li>HC-SR04</li>
+            <li>Sensor & Aktuator</li>
+            <li>Rangkaian Elektronika</li>
+            <li>PCB Design</li>
+            <li>Voltage Divider</li>
+          </ul>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="80">
+              <div class="skill-bar-fill"></div>
+            </div>
+            <span class="skill-percent">80%</span>
+          </div>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+          <h3>Protokol & Komunikasi IoT</h3>
+          <p>Implementasi komunikasi data sensor ke cloud menggunakan protokol IoT ringan untuk monitoring real-time.</p>
+          <ul class="skill-tags">
+            <li>MQTT</li>
+            <li>Ubidots Cloud</li>
+            <li>Wi-Fi</li>
+            <li>HTTP</li>
+            <li>Serial Monitor</li>
+          </ul>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="70">
+              <div class="skill-bar-fill"></div>
+            </div>
+            <span class="skill-percent">70%</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ INTERACTIVE ============ -->
+    <section id="interactive">
+      <div class="section-label">03 — Interactive</div>
+      <div class="interactive-header reveal">
+        <h2>Jelajahi<br /><em>Lebih Lanjut.</em></h2>
+        <p>Klik tab untuk beralih antara detail skill dan kutipan inspirasi.</p>
+      </div>
+
+      <div class="tab-nav reveal">
+        <button class="tab-btn active" data-tab="skill-detail">
+          <i class="fas fa-layer-group"></i> Skill Detail
+        </button>
+        <button class="tab-btn" data-tab="quote">
+          <i class="fas fa-quote-left"></i> Kutipan
+        </button>
+      </div>
+
+      <!-- Tab: Skill Detail -->
+      <div class="tab-content active" id="tab-skill-detail">
+        <div class="skill-detail-grid">
+          <div class="skill-detail-list">
+            <button class="skill-detail-btn active" data-skill="iot">
+              <i class="fas fa-microchip"></i>
+              <span>IoT & Embedded Systems</span>
+              <i class="fas fa-chevron-right arrow"></i>
+            </button>
+            <button class="skill-detail-btn" data-skill="hardware">
+              <i class="fas fa-bolt"></i>
+              <span>Elektronika & Hardware</span>
+              <i class="fas fa-chevron-right arrow"></i>
+            </button>
+            <button class="skill-detail-btn" data-skill="protokol">
+              <i class="fas fa-network-wired"></i>
+              <span>Protokol & Komunikasi IoT</span>
+              <i class="fas fa-chevron-right arrow"></i>
+            </button>
+          </div>
+          <div class="skill-detail-panel" id="skill-detail-panel">
+            <!-- Diisi oleh JavaScript -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab: Random Quote -->
+      <div class="tab-content" id="tab-quote">
+        <div class="quote-box">
+          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+          <blockquote id="quote-text">Klik tombol di bawah untuk mendapatkan kutipan inspirasi.</blockquote>
+          <p id="quote-author" class="quote-author">—</p>
+          <div class="quote-actions">
+            <button class="btn-primary" id="btn-new-quote">
+              <i class="fas fa-sync-alt"></i> Kutipan Baru
+            </button>
+          </div>
+          <div class="saved-quotes-wrap hidden" id="saved-quotes-wrap">
+            <p class="saved-label">Kutipan tersimpan:</p>
+            <ul id="saved-quotes-list"></ul>
+            <button class="btn-clear" id="btn-clear-quotes">Hapus Semua</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ============ CONTACT / KOMENTAR FORM ============ -->
+    <section id="contact">
+      <div class="section-label">04 — Contact</div>
+      <div class="contact-two-col reveal">
+
+        <!-- Kiri: info kontak -->
+        <div class="contact-left-col">
+          <h2>Mari<br /><em>Terhubung.</em></h2>
+          <p>Terbuka untuk diskusi proyek, kolaborasi, atau sekadar ngobrol soal IoT dan elektronika.</p>
+          <div class="contact-links">
+            <a href="mailto:myudailham04@gmail.com" class="contact-link">
+              <i class="fas fa-envelope"></i>
+              <span>myudailham04@gmail.com</span>
+            </a>
+            <a href="https://github.com/yudailhm" target="_blank" class="contact-link">
+              <i class="fab fa-github"></i>
+              <span>github.com/yudailhm</span>
+            </a>
+            <a href="https://linkedin.com/in/yuda-ilham" target="_blank" class="contact-link">
+              <i class="fab fa-linkedin"></i>
+              <span>linkedin.com/in/yuda-ilham</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Kanan: form komentar -->
+        <div class="contact-right-col">
+          <h3 class="form-title">
+            <i class="fas fa-comment-dots"></i> Tinggalkan Komentar
+          </h3>
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Nama</label>
+              <input type="text" id="name" name="name" placeholder="Nama kamu" required minlength="2" />
+              <span class="form-error" id="name-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="email@contoh.com" required />
+              <span class="form-error" id="email-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Komentar</label>
+              <textarea id="message" name="message" placeholder="Tulis komentarmu tentang portofolio ini..." rows="4" required minlength="5"></textarea>
+              <span class="form-error" id="message-error"></span>
+            </div>
+            <button type="submit" class="btn-primary">
+              <i class="fas fa-paper-plane"></i> Kirim Komentar
+            </button>
+            <div id="form-success" class="form-success hidden">
+              <i class="fas fa-check-circle"></i> Komentar terkirim! Cek section Komentar di bawah.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ COMMENTS ============ -->
+    <section id="comments">
+      <div class="section-label">05 — Komentar</div>
+      <div class="comments-header reveal">
+        <h2>Apa Kata<br /><em>Mereka.</em></h2>
+        <p>Komentar dari pengunjung portofolio ini.</p>
+      </div>
+
+      <div class="comments-toolbar reveal">
+        <span id="comment-count" class="comment-count">0 komentar</span>
+        <button class="btn-clear" id="btn-clear-comments">
+          <i class="fas fa-trash"></i> Hapus Semua
+        </button>
+      </div>
+
+      <div id="comments-list" class="comments-list">
+        <!-- Diisi oleh JavaScript -->
+        <div class="comments-empty" id="comments-empty">
+          <i class="fas fa-comment-slash"></i>
+          <p>Belum ada komentar. Jadilah yang pertama!</p>
+          <a href="#contact" class="btn-outline" style="margin-top:1rem; display:inline-flex;">
+            Tulis Komentar
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OSCILLOSCOPE / CANVAS API ============ -->
+    <section id="oscilloscope">
+      <div class="section-label">06 — Canvas API</div>
+      <div class="osc-header reveal">
+        <h2>Simulasi<br /><em>Osiloskop.</em></h2>
+        <p>Visualisasi sinyal elektronik interaktif menggunakan HTML5 Canvas API. Atur parameter dan amati perubahan gelombang secara real-time.</p>
+      </div>
+
+      <div class="osc-wrapper reveal">
+
+        <!-- Screen -->
+        <div class="osc-screen-wrap">
+          <div class="osc-screen-label">
+            <span class="osc-dot"></span>
+            <span id="osc-wave-label">SINE WAVE</span>
+            <span class="osc-status">LIVE</span>
+          </div>
+          <canvas id="oscilloscope-canvas"></canvas>
+          <div class="osc-axes">
+            <span class="osc-axis-y">AMP</span>
+            <span class="osc-axis-x">TIME →</span>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="osc-controls">
+
+          <div class="osc-control-group">
+            <p class="osc-group-title"><i class="fas fa-wave-square"></i> Jenis Gelombang</p>
+            <div class="wave-btn-group">
+              <button class="wave-btn active" data-wave="sine">
+                <svg viewBox="0 0 60 30" class="wave-icon"><path d="M0 15 C10 0,20 0,30 15 C40 30,50 30,60 15" stroke="currentColor" fill="none" stroke-width="2.5"/></svg>
+                Sine
+              </button>
+              <button class="wave-btn" data-wave="square">
+                <svg viewBox="0 0 60 30" class="wave-icon"><polyline points="0,15 0,5 20,5 20,25 40,25 40,5 60,5 60,15" stroke="currentColor" fill="none" stroke-width="2.5"/></svg>
+                Square
+              </button>
+              <button class="wave-btn" data-wave="sawtooth">
+                <svg viewBox="0 0 60 30" class="wave-icon"><polyline points="0,25 20,5 20,25 40,5 40,25 60,5" stroke="currentColor" fill="none" stroke-width="2.5"/></svg>
+                Sawtooth
+              </button>
+              <button class="wave-btn" data-wave="triangle">
+                <svg viewBox="0 0 60 30" class="wave-icon"><polyline points="0,15 15,5 30,25 45,5 60,15" stroke="currentColor" fill="none" stroke-width="2.5"/></svg>
+                Triangle
+              </button>
+            </div>
+          </div>
+
+          <div class="osc-control-group">
+            <p class="osc-group-title"><i class="fas fa-sliders-h"></i> Parameter Sinyal</p>
+
+            <div class="osc-slider-row">
+              <label>Frekuensi</label>
+              <div class="slider-wrap">
+                <input type="range" id="osc-freq" min="0.5" max="5" step="0.1" value="1.5" />
+                <span class="slider-val" id="osc-freq-val">1.5 Hz</span>
+              </div>
+            </div>
+
+            <div class="osc-slider-row">
+              <label>Amplitudo</label>
+              <div class="slider-wrap">
+                <input type="range" id="osc-amp" min="10" max="100" step="1" value="70" />
+                <span class="slider-val" id="osc-amp-val">70%</span>
+              </div>
+            </div>
+
+            <div class="osc-slider-row">
+              <label>Kecepatan</label>
+              <div class="slider-wrap">
+                <input type="range" id="osc-speed" min="0.5" max="4" step="0.1" value="1.5" />
+                <span class="slider-val" id="osc-speed-val">1.5×</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="osc-control-group">
+            <p class="osc-group-title"><i class="fas fa-palette"></i> Warna Sinyal</p>
+            <div class="color-btn-group">
+              <button class="color-btn active" data-color="#c8b89a" style="--c:#c8b89a"></button>
+              <button class="color-btn" data-color="#4fc3f7" style="--c:#4fc3f7"></button>
+              <button class="color-btn" data-color="#81c784" style="--c:#81c784"></button>
+              <button class="color-btn" data-color="#ff8a65" style="--c:#ff8a65"></button>
+              <button class="color-btn" data-color="#ce93d8" style="--c:#ce93d8"></button>
+            </div>
+          </div>
+
+          <div class="osc-btn-row">
+            <button class="osc-action-btn" id="osc-pause-btn">
+              <i class="fas fa-pause" id="osc-pause-icon"></i>
+              <span id="osc-pause-label">Pause</span>
+            </button>
+            <button class="osc-action-btn secondary" id="osc-screenshot-btn">
+              <i class="fas fa-camera"></i> Screenshot
+            </button>
+          </div>
+
+          <div class="osc-stats">
+            <div class="osc-stat">
+              <span class="stat-label">Periode</span>
+              <span class="stat-val" id="stat-period">0.67 s</span>
+            </div>
+            <div class="osc-stat">
+              <span class="stat-label">Vpp</span>
+              <span class="stat-val" id="stat-vpp">140 mV</span>
+            </div>
+            <div class="osc-stat">
+              <span class="stat-label">Bentuk</span>
+              <span class="stat-val" id="stat-wave">Sinusoidal</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WEATHER — OpenWeatherMap API ============ -->
+    <section id="weather">
+      <div class="section-label">07 — Live Weather</div>
+      <div class="weather-header reveal">
+        <h2>Cuaca<br /><em>Makassar.</em></h2>
+        <p>Data cuaca real-time kota Makassar via OpenWeatherMap API.</p>
+      </div>
+
+      <div class="weather-card reveal" id="weather-card">
+        <!-- Loading state -->
+        <div class="weather-loading" id="weather-loading">
+          <div class="weather-spinner"></div>
+          <span>Mengambil data cuaca...</span>
+        </div>
+
+        <!-- Content (hidden until loaded) -->
+        <div class="weather-content hidden" id="weather-content">
+          <div class="weather-main">
+            <div class="weather-icon-wrap">
+              <img id="weather-icon" src="" alt="Weather icon" />
+            </div>
+            <div class="weather-temp-wrap">
+              <span class="weather-temp" id="weather-temp">--</span>
+              <span class="weather-unit">°C</span>
+            </div>
+            <div class="weather-desc-wrap">
+              <p class="weather-city" id="weather-city">Makassar, ID</p>
+              <p class="weather-desc" id="weather-desc">--</p>
+            </div>
+          </div>
+          <div class="weather-details">
+            <div class="weather-detail-item">
+              <i class="fas fa-tint"></i>
+              <span class="detail-label">Kelembaban</span>
+              <span class="detail-val" id="weather-humidity">--%</span>
+            </div>
+            <div class="weather-detail-item">
+              <i class="fas fa-wind"></i>
+              <span class="detail-label">Angin</span>
+              <span class="detail-val" id="weather-wind">-- m/s</span>
+            </div>
+            <div class="weather-detail-item">
+              <i class="fas fa-thermometer-half"></i>
+              <span class="detail-label">Terasa</span>
+              <span class="detail-val" id="weather-feels">--°C</span>
+            </div>
+            <div class="weather-detail-item">
+              <i class="fas fa-eye"></i>
+              <span class="detail-label">Visibilitas</span>
+              <span class="detail-val" id="weather-vis">-- km</span>
+            </div>
+          </div>
+          <div class="weather-footer-row">
+            <span class="weather-updated" id="weather-updated">--</span>
+            <button class="weather-refresh" id="weather-refresh" aria-label="Refresh">
+              <i class="fas fa-sync-alt"></i> Perbarui
+            </button>
+          </div>
+        </div>
+
+        <!-- Error state -->
+        <div class="weather-error hidden" id="weather-error">
+          <i class="fas fa-exclamation-triangle"></i>
+          <p id="weather-error-msg">Gagal mengambil data.</p>
+          <button class="btn-outline" id="weather-retry">Coba Lagi</button>
+        </div>
+      </div>
+
+      <!-- API key info box -->
+      <div class="weather-apikey-info reveal" id="weather-apikey-info">
+        <i class="fas fa-key"></i>
+        <div>
+          <strong>Demo Mode — API Key Belum Diset</strong>
+          <p>Buka <code>js/main.js</code> lalu ganti nilai <code>OPENWEATHER_API_KEY</code> dengan key-mu dari
+          <a href="https://openweathermap.org/api" target="_blank" rel="noopener">openweathermap.org</a>
+          (gratis).</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer></footer>
+
+  <audio id="bg-audio" preload="none">
+    <source src="https://www.soundjay.com/misc/sounds/bell-ringing-01.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
