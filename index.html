@@ -1,536 +1,134 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Muhammad Wahyuda Ilham — Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Wahyuda Ilham — Portfolio</title>
+<meta name="description" content="Electrical engineering student building embedded systems, IoT, and control systems projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-<body class="dark" data-theme="dark">
+<body>
 
-  <!-- ============ NAVBAR ============ -->
-  <header>
-    <nav>
-      <a href="#hero" class="nav-logo">MWI<span class="dot">.</span></a>
-      <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#interactive">Interactive</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#comments">Komentar</a></li>
-        <li><a href="#oscilloscope">Osiloskop</a></li>
-        <li><a href="#weather">Cuaca</a></li>
-      </ul>
-      <div class="nav-right">
-        <button id="theme-toggle" aria-label="Toggle dark/light mode">
-          <i class="fas fa-sun" id="theme-icon"></i>
-        </button>
-        <button class="hamburger" id="hamburger" aria-label="Open menu">
-          <span></span><span></span><span></span>
-        </button>
+<header class="nav">
+  <a href="#top" class="nav__mark">M.W. Ilham</a>
+  <nav class="nav__links">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero" id="top">
+    <p class="hero__eyebrow">Electrical Engineering · Control Systems</p>
+    <h1 class="hero__name">Muhammad Wahyuda<br>Ilham</h1>
+    <p class="hero__tagline">I build embedded systems that quietly do their job — sensors that report,
+    controllers that respond, circuits that hold up outside the lab.</p>
+
+    <dl class="spec">
+      <div class="spec__row">
+        <dt>Focus</dt><dd>IoT &amp; Embedded Systems</dd>
       </div>
-    </nav>
-  </header>
-
-  <main>
-
-    <!-- ============ HERO ============ -->
-    <section id="hero">
-      <div class="hero-content">
-        <p class="hero-label">— Electrical Engineering Student</p>
-        <h1 class="hero-name">Muhammad<br /><em>Wahyuda Ilham</em></h1>
-        <p class="hero-desc">
-          Mahasiswa Teknik Elektro Universitas Hasanuddin.<br />
-          Passionate di bidang <span class="highlight">IoT</span> &amp; <span class="highlight">Embedded Systems</span>.
-        </p>
-        <div class="hero-cta">
-          <a href="#about" class="btn-primary">Lihat Profil</a>
-          <a href="#contact" class="btn-outline">Hubungi Saya</a>
-        </div>
+      <div class="spec__row">
+        <dt>Institution</dt><dd>Universitas Hasanuddin</dd>
       </div>
-      <div class="hero-visual">
-        <div class="circuit-ring ring-1"></div>
-        <div class="circuit-ring ring-2"></div>
-        <div class="circuit-ring ring-3"></div>
-        <div class="hero-ring-center">
-          <i class="fas fa-microchip"></i>
-        </div>
+      <div class="spec__row">
+        <dt>Concentration</dt><dd>Control Systems</dd>
       </div>
-      <div class="scroll-hint">
-        <span>scroll</span>
-        <i class="fas fa-arrow-down"></i>
+    </dl>
+  </section>
+
+  <section class="work" id="work">
+    <p class="section__label">Selected work — 5 projects</p>
+
+    <article class="project" id="project-01">
+      <div class="project__media">
+        <img src="assets/img/project-01-watertank.jpg" alt="Ubidots dashboard and the ultrasonic sensor hardware setup for the water tank monitoring system">
       </div>
-    </section>
-
-    <!-- ============ ABOUT ============ -->
-    <section id="about">
-      <div class="section-label">01 — About</div>
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <h2>Sedikit<br /><em>tentang saya.</em></h2>
-          <p>
-            Saya <strong>Muhammad Wahyuda Ilham</strong>, mahasiswa Teknik Elektro semester 8 di
-            Universitas Hasanuddin, Makassar. Bidang yang menjadi fokus utama saya adalah
-            <strong>Internet of Things (IoT)</strong> dan sistem elektronika terbenam berbasis mikrokontroler.
-          </p>
-          <p>
-            Saat ini saya sedang menjalani program magang di <strong>Pelindo Petikemas</strong>,
-            di mana saya mengembangkan sistem monitoring volume tandon air berbasis sensor ultrasonik
-            HC-SR04 menggunakan Wemos D1 Mini, protokol MQTT, dan platform cloud Ubidots.
-          </p>
-          <div class="about-meta">
-            <div class="meta-item">
-              <span class="meta-number" data-target="8">0</span>
-              <span class="meta-label">Semester</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-number" data-target="1">0</span>
-              <span class="meta-label">Proyek IoT</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-number" data-target="2022">0</span>
-              <span class="meta-label">Angkatan</span>
-            </div>
-          </div>
-        </div>
-        <div class="about-image reveal">
-          <div class="image-frame">
-            <img src="foto-profil.jpg" alt="Muhammad Wahyuda Ilham" class="about-photo" />
-            <div class="image-tag">Pelindo Petikemas — Magang 2025</div>
-          </div>
-        </div>
+      <div class="project__body">
+        <span class="project__index">01</span>
+        <h2 class="project__title">Water Tank Volume Monitoring via IoT</h2>
+        <p class="project__meta">Individual project · Internship at PT Pelindo Terminal Petikemas New Makassar · 2026</p>
+        <p class="project__desc">Designed during an 8th-semester internship to let staff check a water tank's fill level remotely instead of visiting the site in person. An SR04M-2 ultrasonic sensor measures water level, a Wemos D1 Mini calculates fill percentage, and the reading is pushed over MQTT to a real-time Ubidots dashboard. Currently a working prototype rather than a deployed solution, but it proves a low-cost way to cut unnecessary site visits.</p>
+        <p class="project__learn"><strong>What I learned —</strong> how to correctly identify a sensor's communication protocol (the SR04M-2 uses TRIG/ECHO pins, not UART as I first assumed), and how to diagnose unstable readings caused by loose jumper wires.</p>
       </div>
-    </section>
+    </article>
 
-    <!-- ============ SKILLS ============ -->
-    <section id="skills">
-      <div class="section-label">02 — Skills</div>
-      <div class="skills-header reveal">
-        <h2>Keahlian &amp;<br /><em>Teknologi.</em></h2>
-        <p>Tools dan teknologi yang saya gunakan dalam pengembangan proyek.</p>
+    <article class="project" id="project-02">
+      <div class="project__media">
+        <img src="assets/img/project-02-dht11.jpg" alt="DHT11 sensor and ESP32 board wired on a breadboard">
       </div>
-      <div class="skills-grid">
-
-        <article class="skill-card reveal">
-          <div class="skill-icon"><i class="fas fa-microchip"></i></div>
-          <h3>IoT & Embedded Systems</h3>
-          <p>Pengembangan sistem berbasis mikrokontroler untuk monitoring dan kontrol perangkat secara real-time.</p>
-          <ul class="skill-tags">
-            <li>ESP32</li>
-            <li>Wemos D1 Mini</li>
-            <li>MQTT</li>
-            <li>Ubidots</li>
-            <li>Arduino IDE</li>
-          </ul>
-          <div class="skill-bar-wrap">
-            <div class="skill-bar" data-width="80">
-              <div class="skill-bar-fill"></div>
-            </div>
-            <span class="skill-percent">80%</span>
-          </div>
-        </article>
-
-        <article class="skill-card reveal">
-          <div class="skill-icon"><i class="fas fa-bolt"></i></div>
-          <h3>Elektronika & Hardware</h3>
-          <p>Perancangan dan analisis rangkaian elektronika, sensor, dan sistem kelistrikan industri.</p>
-          <ul class="skill-tags">
-            <li>HC-SR04</li>
-            <li>Sensor & Aktuator</li>
-            <li>Rangkaian Elektronika</li>
-            <li>PCB Design</li>
-            <li>Voltage Divider</li>
-          </ul>
-          <div class="skill-bar-wrap">
-            <div class="skill-bar" data-width="80">
-              <div class="skill-bar-fill"></div>
-            </div>
-            <span class="skill-percent">80%</span>
-          </div>
-        </article>
-
-        <article class="skill-card reveal">
-          <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
-          <h3>Protokol & Komunikasi IoT</h3>
-          <p>Implementasi komunikasi data sensor ke cloud menggunakan protokol IoT ringan untuk monitoring real-time.</p>
-          <ul class="skill-tags">
-            <li>MQTT</li>
-            <li>Ubidots Cloud</li>
-            <li>Wi-Fi</li>
-            <li>HTTP</li>
-            <li>Serial Monitor</li>
-          </ul>
-          <div class="skill-bar-wrap">
-            <div class="skill-bar" data-width="70">
-              <div class="skill-bar-fill"></div>
-            </div>
-            <span class="skill-percent">70%</span>
-          </div>
-        </article>
-
+      <div class="project__body">
+        <span class="project__index">02</span>
+        <h2 class="project__title">Temperature &amp; Humidity Detection System</h2>
+        <p class="project__meta">Group project (Kelompok 3) · Class assignment · 2024</p>
+        <p class="project__desc">A real-time temperature and humidity system built around a DHT11 sensor and an ESP32, with readings displayed on a Blynk dashboard over Wi-Fi. My role was hardware assembly and wiring. We tested it across three conditions — a non-AC room (30.20°C), an AC room (27.60°C), and outdoors (28.50°C) — and confirmed it reliably told the environments apart.</p>
+        <p class="project__learn"><strong>What I learned —</strong> the practical side of sensor wiring, including why a pull-up resistor matters for stable signal readings.</p>
       </div>
-    </section>
+    </article>
 
-    <!-- ============ INTERACTIVE ============ -->
-    <section id="interactive">
-      <div class="section-label">03 — Interactive</div>
-      <div class="interactive-header reveal">
-        <h2>Jelajahi<br /><em>Lebih Lanjut.</em></h2>
-        <p>Klik tab untuk beralih antara detail skill dan kutipan inspirasi.</p>
+    <article class="project" id="project-03">
+      <div class="project__media">
+        <img src="assets/img/project-03-scara.jpg" alt="Fusion 360 renders of a 3-joint SCARA robotic arm from four angles">
       </div>
-
-      <div class="tab-nav reveal">
-        <button class="tab-btn active" data-tab="skill-detail">
-          <i class="fas fa-layer-group"></i> Skill Detail
-        </button>
-        <button class="tab-btn" data-tab="quote">
-          <i class="fas fa-quote-left"></i> Kutipan
-        </button>
+      <div class="project__body">
+        <span class="project__index">03</span>
+        <h2 class="project__title">3-Joint SCARA-Inspired Robotic Arm</h2>
+        <p class="project__meta">Group project (Kelompok 3) · Class assignment · 2025</p>
+        <p class="project__desc">A 3D model and kinematic study of a SCARA-type arm — a design built for fast, precise pick-and-place work. My contribution was the parametric model in Fusion 360, covering all three joints: a 360° revolving base, a rotational elbow, and a linear vertical stroke. We simulated its motion to visualize the combined cylindrical work volume.</p>
+        <p class="project__learn"><strong>What I learned —</strong> how each joint type directly shapes a robot's reach and precision, and stronger parametric 3D modeling technique.</p>
       </div>
+    </article>
 
-      <!-- Tab: Skill Detail -->
-      <div class="tab-content active" id="tab-skill-detail">
-        <div class="skill-detail-grid">
-          <div class="skill-detail-list">
-            <button class="skill-detail-btn active" data-skill="iot">
-              <i class="fas fa-microchip"></i>
-              <span>IoT & Embedded Systems</span>
-              <i class="fas fa-chevron-right arrow"></i>
-            </button>
-            <button class="skill-detail-btn" data-skill="hardware">
-              <i class="fas fa-bolt"></i>
-              <span>Elektronika & Hardware</span>
-              <i class="fas fa-chevron-right arrow"></i>
-            </button>
-            <button class="skill-detail-btn" data-skill="protokol">
-              <i class="fas fa-network-wired"></i>
-              <span>Protokol & Komunikasi IoT</span>
-              <i class="fas fa-chevron-right arrow"></i>
-            </button>
-          </div>
-          <div class="skill-detail-panel" id="skill-detail-panel">
-            <!-- Diisi oleh JavaScript -->
-          </div>
-        </div>
+    <article class="project" id="project-04">
+      <div class="project__media">
+        <img src="assets/img/project-04-pcb.jpg" alt="A hand-soldered custom PCB driving a series of LEDs, on breadboard and in a finished bulb housing">
       </div>
-
-      <!-- Tab: Random Quote -->
-      <div class="tab-content" id="tab-quote">
-        <div class="quote-box">
-          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-          <blockquote id="quote-text">Klik tombol di bawah untuk mendapatkan kutipan inspirasi.</blockquote>
-          <p id="quote-author" class="quote-author">—</p>
-          <div class="quote-actions">
-            <button class="btn-primary" id="btn-new-quote">
-              <i class="fas fa-sync-alt"></i> Kutipan Baru
-            </button>
-          </div>
-          <div class="saved-quotes-wrap hidden" id="saved-quotes-wrap">
-            <p class="saved-label">Kutipan tersimpan:</p>
-            <ul id="saved-quotes-list"></ul>
-            <button class="btn-clear" id="btn-clear-quotes">Hapus Semua</button>
-          </div>
-        </div>
+      <div class="project__body">
+        <span class="project__index">04</span>
+        <h2 class="project__title">Custom PCB-Based LED Driver Circuit</h2>
+        <p class="project__meta">Group project (Group 14, 8 members) · Lab assignment · 2023</p>
+        <p class="project__desc">An AC-to-DC power supply built from discrete components — bridge diode, zener diode, capacitors, resistors — hand-soldered onto a custom-etched PCB to safely drive nine LEDs. My focus was the PCB design and soldering. Calculated power draw was 7.29 W; measured power came in at 7.61 W, a close enough match to validate the design.</p>
+        <p class="project__learn"><strong>What I learned —</strong> how much precision matters when hand-soldering a custom board, and how to connect theoretical circuit calculations to a working physical prototype.</p>
       </div>
+    </article>
 
-    </section>
-
-    <!-- ============ CONTACT / KOMENTAR FORM ============ -->
-    <section id="contact">
-      <div class="section-label">04 — Contact</div>
-      <div class="contact-two-col reveal">
-
-        <!-- Kiri: info kontak -->
-        <div class="contact-left-col">
-          <h2>Mari<br /><em>Terhubung.</em></h2>
-          <p>Terbuka untuk diskusi proyek, kolaborasi, atau sekadar ngobrol soal IoT dan elektronika.</p>
-          <div class="contact-links">
-            <a href="mailto:myudailham04@gmail.com" class="contact-link">
-              <i class="fas fa-envelope"></i>
-              <span>myudailham04@gmail.com</span>
-            </a>
-            <a href="https://github.com/yudailhm" target="_blank" class="contact-link">
-              <i class="fab fa-github"></i>
-              <span>github.com/yudailhm</span>
-            </a>
-            <a href="https://linkedin.com/in/yuda-ilham" target="_blank" class="contact-link">
-              <i class="fab fa-linkedin"></i>
-              <span>linkedin.com/in/yuda-ilham</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- Kanan: form komentar -->
-        <div class="contact-right-col">
-          <h3 class="form-title">
-            <i class="fas fa-comment-dots"></i> Tinggalkan Komentar
-          </h3>
-          <form id="contact-form" novalidate>
-            <div class="form-group">
-              <label for="name">Nama</label>
-              <input type="text" id="name" name="name" placeholder="Nama kamu" required minlength="2" />
-              <span class="form-error" id="name-error"></span>
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="email@contoh.com" required />
-              <span class="form-error" id="email-error"></span>
-            </div>
-            <div class="form-group">
-              <label for="message">Komentar</label>
-              <textarea id="message" name="message" placeholder="Tulis komentarmu tentang portofolio ini..." rows="4" required minlength="5"></textarea>
-              <span class="form-error" id="message-error"></span>
-            </div>
-            <button type="submit" class="btn-primary">
-              <i class="fas fa-paper-plane"></i> Kirim Komentar
-            </button>
-            <div id="form-success" class="form-success hidden">
-              <i class="fas fa-check-circle"></i> Komentar terkirim! Cek section Komentar di bawah.
-            </div>
-          </form>
-        </div>
-
+    <article class="project" id="project-05">
+      <div class="project__media">
+        <img src="assets/img/project-05-clothesline.jpg" alt="Circuit schematic of the rain and LDR sensors feeding into an ATmega8535 microcontroller">
       </div>
-    </section>
-
-    <!-- ============ COMMENTS ============ -->
-    <section id="comments">
-      <div class="section-label">05 — Komentar</div>
-      <div class="comments-header reveal">
-        <h2>Apa Kata<br /><em>Mereka.</em></h2>
-        <p>Komentar dari pengunjung portofolio ini.</p>
+      <div class="project__body">
+        <span class="project__index">05</span>
+        <h2 class="project__title">Automatic Clothesline Roof</h2>
+        <p class="project__meta">Group research project (Kelompok 9) · Class assignment · 2025</p>
+        <p class="project__desc">A clothesline roof that closes itself when it senses rain or falling light, using a rain sensor and an LDR read by an ATmega8535, controlling a servo and buzzer. My role was program logic and debugging. Testing surfaced two real problems in sequence — an underpowered servo, then the rain and LDR sensors interfering with each other — solved by isolating one variable at a time.</p>
+        <p class="project__learn"><strong>What I learned —</strong> a structured, one-variable-at-a-time approach to hardware debugging.</p>
       </div>
+    </article>
 
-      <div class="comments-toolbar reveal">
-        <span id="comment-count" class="comment-count">0 komentar</span>
-        <button class="btn-clear" id="btn-clear-comments">
-          <i class="fas fa-trash"></i> Hapus Semua
-        </button>
-      </div>
+  </section>
 
-      <div id="comments-list" class="comments-list">
-        <!-- Diisi oleh JavaScript -->
-        <div class="comments-empty" id="comments-empty">
-          <i class="fas fa-comment-slash"></i>
-          <p>Belum ada komentar. Jadilah yang pertama!</p>
-          <a href="#contact" class="btn-outline" style="margin-top:1rem; display:inline-flex;">
-            Tulis Komentar
-          </a>
-        </div>
-      </div>
-    </section>
+  <section class="about" id="about">
+    <p class="section__label">About</p>
+    <p class="about__text">I'm a final-year Electrical Engineering student at Universitas Hasanuddin, concentrating in Control Systems. Most of what I build starts on a breadboard — reading a sensor, closing a control loop, getting a signal somewhere useful. Comfortable across ESP32/embedded firmware, MATLAB/Simulink, and PCB design, with hands-on industry experience from an internship in a live port environment. I'm looking to take that same hands-on instinct further into software and product design — building things people actually use.</p>
+  </section>
 
-    <!-- ============ OSCILLOSCOPE / CANVAS API ============ -->
-    <section id="oscilloscope">
-      <div class="section-label">06 — Canvas API</div>
-      <div class="osc-header reveal">
-        <h2>Simulasi<br /><em>Osiloskop.</em></h2>
-        <p>Visualisasi sinyal elektronik interaktif menggunakan HTML5 Canvas API. Atur parameter dan amati perubahan gelombang secara real-time.</p>
-      </div>
+</main>
 
-      <div class="osc-wrapper reveal">
+<footer class="contact" id="contact">
+  <div class="contact__row">
+    <a href="mailto:myudailham04@gmail.com">myudailham04@gmail.com</a>
+    <a href="tel:+6281547384628">+62 815-4738-4628</a>
+    <a href="https://www.linkedin.com/in/yuda-ilham" target="_blank" rel="noopener">linkedin.com/in/yuda-ilham</a>
+    <a href="https://github.com/yudailhm" target="_blank" rel="noopener">github.com/yudailhm</a>
+  </div>
+  <p class="contact__foot">Gowa, South Sulawesi, Indonesia</p>
+</footer>
 
-        <!-- Screen -->
-        <div class="osc-screen-wrap">
-          <div class="osc-screen-label">
-            <span class="osc-dot"></span>
-            <span id="osc-wave-label">SINE WAVE</span>
-            <span class="osc-status">LIVE</span>
-          </div>
-          <canvas id="oscilloscope-canvas"></canvas>
-          <div class="osc-axes">
-            <span class="osc-axis-y">AMP</span>
-            <span class="osc-axis-x">TIME →</span>
-          </div>
-        </div>
-
-        <!-- Controls -->
-        <div class="osc-controls">
-
-          <div class="osc-control-group">
-            <p class="osc-group-title"><i class="fas fa-wave-square"></i> Jenis Gelombang</p>
-            <div class="wave-btn-group">
-              <button class="wave-btn active" data-wave="sine">
-                <svg viewBox="0 0 60 30" class="wave-icon"><path d="M0 15 C10 0,20 0,30 15 C40 30,50 30,60 15" stroke="currentColor" fill="none" stroke-width="2.5"/></svg>
-                Sine
-              </button>
-              <button class="wave-btn" data-wave="square">
-                <svg viewBox="0 0 60 30" class="wave-icon"><polyline points="0,15 0,5 20,5 20,25 40,25 40,5 60,5 60,15" stroke="currentColor" fill="none" stroke-width="2.5"/></svg>
-                Square
-              </button>
-              <button class="wave-btn" data-wave="sawtooth">
-                <svg viewBox="0 0 60 30" class="wave-icon"><polyline points="0,25 20,5 20,25 40,5 40,25 60,5" stroke="currentColor" fill="none" stroke-width="2.5"/></svg>
-                Sawtooth
-              </button>
-              <button class="wave-btn" data-wave="triangle">
-                <svg viewBox="0 0 60 30" class="wave-icon"><polyline points="0,15 15,5 30,25 45,5 60,15" stroke="currentColor" fill="none" stroke-width="2.5"/></svg>
-                Triangle
-              </button>
-            </div>
-          </div>
-
-          <div class="osc-control-group">
-            <p class="osc-group-title"><i class="fas fa-sliders-h"></i> Parameter Sinyal</p>
-
-            <div class="osc-slider-row">
-              <label>Frekuensi</label>
-              <div class="slider-wrap">
-                <input type="range" id="osc-freq" min="0.5" max="5" step="0.1" value="1.5" />
-                <span class="slider-val" id="osc-freq-val">1.5 Hz</span>
-              </div>
-            </div>
-
-            <div class="osc-slider-row">
-              <label>Amplitudo</label>
-              <div class="slider-wrap">
-                <input type="range" id="osc-amp" min="10" max="100" step="1" value="70" />
-                <span class="slider-val" id="osc-amp-val">70%</span>
-              </div>
-            </div>
-
-            <div class="osc-slider-row">
-              <label>Kecepatan</label>
-              <div class="slider-wrap">
-                <input type="range" id="osc-speed" min="0.5" max="4" step="0.1" value="1.5" />
-                <span class="slider-val" id="osc-speed-val">1.5×</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="osc-control-group">
-            <p class="osc-group-title"><i class="fas fa-palette"></i> Warna Sinyal</p>
-            <div class="color-btn-group">
-              <button class="color-btn active" data-color="#c8b89a" style="--c:#c8b89a"></button>
-              <button class="color-btn" data-color="#4fc3f7" style="--c:#4fc3f7"></button>
-              <button class="color-btn" data-color="#81c784" style="--c:#81c784"></button>
-              <button class="color-btn" data-color="#ff8a65" style="--c:#ff8a65"></button>
-              <button class="color-btn" data-color="#ce93d8" style="--c:#ce93d8"></button>
-            </div>
-          </div>
-
-          <div class="osc-btn-row">
-            <button class="osc-action-btn" id="osc-pause-btn">
-              <i class="fas fa-pause" id="osc-pause-icon"></i>
-              <span id="osc-pause-label">Pause</span>
-            </button>
-            <button class="osc-action-btn secondary" id="osc-screenshot-btn">
-              <i class="fas fa-camera"></i> Screenshot
-            </button>
-          </div>
-
-          <div class="osc-stats">
-            <div class="osc-stat">
-              <span class="stat-label">Periode</span>
-              <span class="stat-val" id="stat-period">0.67 s</span>
-            </div>
-            <div class="osc-stat">
-              <span class="stat-label">Vpp</span>
-              <span class="stat-val" id="stat-vpp">140 mV</span>
-            </div>
-            <div class="osc-stat">
-              <span class="stat-label">Bentuk</span>
-              <span class="stat-val" id="stat-wave">Sinusoidal</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ WEATHER — OpenWeatherMap API ============ -->
-    <section id="weather">
-      <div class="section-label">07 — Live Weather</div>
-      <div class="weather-header reveal">
-        <h2>Cuaca<br /><em>Makassar.</em></h2>
-        <p>Data cuaca real-time kota Makassar via OpenWeatherMap API.</p>
-      </div>
-
-      <div class="weather-card reveal" id="weather-card">
-        <!-- Loading state -->
-        <div class="weather-loading" id="weather-loading">
-          <div class="weather-spinner"></div>
-          <span>Mengambil data cuaca...</span>
-        </div>
-
-        <!-- Content (hidden until loaded) -->
-        <div class="weather-content hidden" id="weather-content">
-          <div class="weather-main">
-            <div class="weather-icon-wrap">
-              <img id="weather-icon" src="" alt="Weather icon" />
-            </div>
-            <div class="weather-temp-wrap">
-              <span class="weather-temp" id="weather-temp">--</span>
-              <span class="weather-unit">°C</span>
-            </div>
-            <div class="weather-desc-wrap">
-              <p class="weather-city" id="weather-city">Makassar, ID</p>
-              <p class="weather-desc" id="weather-desc">--</p>
-            </div>
-          </div>
-          <div class="weather-details">
-            <div class="weather-detail-item">
-              <i class="fas fa-tint"></i>
-              <span class="detail-label">Kelembaban</span>
-              <span class="detail-val" id="weather-humidity">--%</span>
-            </div>
-            <div class="weather-detail-item">
-              <i class="fas fa-wind"></i>
-              <span class="detail-label">Angin</span>
-              <span class="detail-val" id="weather-wind">-- m/s</span>
-            </div>
-            <div class="weather-detail-item">
-              <i class="fas fa-thermometer-half"></i>
-              <span class="detail-label">Terasa</span>
-              <span class="detail-val" id="weather-feels">--°C</span>
-            </div>
-            <div class="weather-detail-item">
-              <i class="fas fa-eye"></i>
-              <span class="detail-label">Visibilitas</span>
-              <span class="detail-val" id="weather-vis">-- km</span>
-            </div>
-          </div>
-          <div class="weather-footer-row">
-            <span class="weather-updated" id="weather-updated">--</span>
-            <button class="weather-refresh" id="weather-refresh" aria-label="Refresh">
-              <i class="fas fa-sync-alt"></i> Perbarui
-            </button>
-          </div>
-        </div>
-
-        <!-- Error state -->
-        <div class="weather-error hidden" id="weather-error">
-          <i class="fas fa-exclamation-triangle"></i>
-          <p id="weather-error-msg">Gagal mengambil data.</p>
-          <button class="btn-outline" id="weather-retry">Coba Lagi</button>
-        </div>
-      </div>
-
-      <!-- API key info box -->
-      <div class="weather-apikey-info reveal" id="weather-apikey-info">
-        <i class="fas fa-key"></i>
-        <div>
-          <strong>Demo Mode — API Key Belum Diset</strong>
-          <p>Buka <code>js/main.js</code> lalu ganti nilai <code>OPENWEATHER_API_KEY</code> dengan key-mu dari
-          <a href="https://openweathermap.org/api" target="_blank" rel="noopener">openweathermap.org</a>
-          (gratis).</p>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ============ FOOTER ============ -->
-  <footer></footer>
-
-  <audio id="bg-audio" preload="none">
-    <source src="https://www.soundjay.com/misc/sounds/bell-ringing-01.mp3" type="audio/mpeg" />
-  </audio>
-
-  <script src="js/main.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
